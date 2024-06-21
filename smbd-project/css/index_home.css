@@ -1,0 +1,47 @@
+body {
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.carousel-item img {
+    height: 90vh; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.caption-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px; /* Menjadikan sudut caption lebih tumpul */
+    text-align: center;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease; /* Transisi warna latar belakang */
+}
+
+.caption-container:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Warna latar belakang saat hover */
+}
+
+.caption-container h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s ease; /* Transisi warna teks */
+}
+
+.caption-container p {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+    opacity: 0.8; /* Efek transparansi pada teks */
+    transition: opacity 0.3s ease; /* Transisi efek transparansi */
+}
+
+.caption-container:hover h5,
+.caption-container:hover p {
+    color: #fff; /* Warna teks saat hover */
+    opacity: 1; /* Mengembalikan opasitas ke nilai awal saat hover */
+}
+
+.container {
+    max-width: 600px; /* Atur lebar maksimum */
+    width: 100%; /* Agar container bisa menyesuaikan lebar layar */
+}

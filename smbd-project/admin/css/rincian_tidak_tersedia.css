@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Warna latar belakang */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white; /* Warna latar belakang konten */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    overflow: hidden; /* Mengatasi bayangan melewati border-radius */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #dee2e6; /* Warna garis */
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #28a745; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f8f9fa; /* Warna latar belakang baris genap */
+}
+
+table tr:hover {
+    background-color: #e2e6ea; /* Warna latar belakang saat hover */
+}
+
+/* Style untuk gambar */
+.gambar-mobil {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px; /* Agar gambar memiliki sudut melengkung */
+}

@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.card {
+    background: linear-gradient(135deg, #edf2f7, #d8e2ef);
+
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+    width: calc(33.33% - 2rem);
+    margin-bottom: 2rem;
+    transition: transform 0.3s cubic-bezier(0.25, 0.45, 0.45, 0.95), box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.card h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.card .details {
+    margin-top: 1.5rem;
+}
+
+.card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 12px;
+    display: block; /* Mengubah menjadi block */
+    width: 100%; /* Lebar menjadi 100% */
+}
+
+.card a:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 2rem);
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
